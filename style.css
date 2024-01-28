@@ -95,8 +95,30 @@ section {
     color: white;
 }
 
+#contact1 figure p a {
+    text-decoration: none;
+    color: white;
+}
+
+#contact1 figure p a:hover {
+    color: cyan;
+    border: 1px solid cyan;
+    padding: 5px 5px;
+    border-radius: 12px;;
+}
+
 section img {
     border-radius: 15px;
+}
+
+#contact1 button {
+    padding: 5px 15px;
+    border-radius: 12px;
+}
+
+#contact1 button:hover {
+    background-color: #e79f31;
+
 }
 
 @media screen{
