@@ -14,12 +14,14 @@
         <h1 style="text-align: center;">MichiMall Online Store<img src="Images/shop.png" alt="Shop Logo" height="30">
         </h1>
         <div id="top">
-            <nav">
-                <a href="index.html">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#products">Products</a>
-                <a href="#promos">Promos</a>
-                <a href="#contact">Contact Us</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#promos">Promos</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
                 </nav>
         </div>
         <hr>
@@ -82,7 +84,7 @@
             <br>
             <h2>PRODUCTS</h2>
             <div id="categorydiv" style="text-align: center;">
-                <section id="category" style="background-color: #1e81b0;">
+                <section id="category1">
                     <h3>Jackets</h3>
                     <hr>
                     <figure>
@@ -116,7 +118,7 @@
                     </figure>
                 </section>
 
-                <section id="category" style="background-color: #e28743;">
+                <section id="category2">
                     <h3>Nightwear</h3>
                     <hr>
                     <figure>
@@ -138,7 +140,7 @@
                     </figure>
                 </section>
 
-                <section id="category" style="background-color: #76b5c5;">
+                <section id="category3">
                     <h3>Dresses</h3>
                     <hr>
                     <figure>
@@ -190,42 +192,55 @@
         <hr>
         <article id="contact">
             <h2>CONTACT US</h2>
-            <div id="contactdiv" style="text-align: center;">
-                <section id="contact1" style="background-color: #1e81b0;">
-                    <h3>GMAIL</h3>
-                    <hr>
-                    <figure>
-                        <img src="Images/gmail.png" alt="GMAIL Image" width="100">
-                        <p style="text-align: center;"><a href="mailto:michinowa13@gmail.com">michinowa13@gmail.com</a></p>
-                    </figure>
-                </section>
+            <div class="row" style="text-align: center;">
+                <div class="column">
+                    <div class="card">
+                        <section>
+                            <h3>GMAIL</h3>
+                            <hr>
+                            <figure>
+                                <img src="Images/gmail.png" alt="GMAIL Image" width="100">
+                                <p style="text-align: center;"><a
+                                        href="mailto:michinowa13@gmail.com">michinowa13@gmail.com</a></p>
+                            </figure>
+                        </section>
+                    </div>
+                </div>
 
-                <section id="contact1" style="background-color: #e28743;">
-                    <h3>CALL US</h3>
-                    <hr>
-                    <figure>
-                        <img src="Images/virtual.png" alt="Call Image" width="100">
-                        <p style="text-align: center;">09123456789</p>
-                    </figure>
-                </section>
+                <div class="column">
+                    <div class="card">
+                        <section>
+                            <h3>CALL US</h3>
+                            <hr>
+                            <figure>
+                                <img src="Images/virtual.png" alt="Call Image" width="100">
+                                <br>
+                                <p style="text-align: center;">09123456789</p>
+                            </figure>
+                        </section>
+                    </div>
+                </div>
 
-                <section id="contact1" style="background-color: #76b5c5;">
-                    <h3>COMMENT</h3>
-                    <hr>
-                    <figure>
-                        <img src="Images/comment.png" alt="Comment Image" width="100">
-                        <form action="">
-                            <br>
-                            <textarea name="commentbox" id="commentbox" cols="20" rows="5"></textarea>
-                            <br>
-                            <button type="submit">Send</button>
-                        </form>
-                    </figure>
-                </section>
+                <div class="column">
+                    <div class="card">
+                        <section>
+                            <h3>COMMENT</h3>
+                            <hr>
+                            <figure>
+                                <img src="Images/comment.png" alt="Comment Image" width="100">
+                                <form action="">
+                                    <textarea name="commentbox" id="commentbox" cols="20" rows="1"></textarea>
+                                    <br>
+                                    <button type="submit">Send</button>
+                                </form>
+                            </figure>
+                        </section>
+                    </div>
+                </div>
             </div>
         </article>
     </main>
-<hr>
+    <hr>
     <footer>
         <p style="text-align: center;">All Rights Reserved &copy;<b> Michi Nowa</b> 2024</p>
         <p style="text-align: center; font-size: small;"><a href="#home">Back to Top</a></p>

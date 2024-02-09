@@ -3,10 +3,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --green1: #009973;
+    --green2: #00995c;
+    --green3: #00997a;
+}
+
 header {
     position: relative;
     padding: 1px 5px;
-    background-color: #e79f31;
+    background-color: mediumaquamarine;
 }
 
 body {
@@ -19,12 +25,18 @@ body {
     overflow: hidden;
 }
 
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
 #top a {
     justify-content: space-between;
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
+    color: black;
     border-radius: 50px;
     padding: 10px 10px;
     text-decoration: none;
@@ -41,11 +53,24 @@ body {
     display: flex;
 }
 
-#category {
+#category1,#category2,#category3 {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
     padding: 10px;
+    margin: 10px;
+}
+
+#category1 {
+    background-color: var(--green1);
+}
+
+#category2 {
+    background-color: var(--green2);
+}
+
+#category3 {
+    background-color: var(--green3);
 }
 
 #contactdiv {
@@ -53,11 +78,26 @@ body {
     display: flex;
 }
 
-#contact1 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+.column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 10px auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 10px;
+    background-color: rgb(1, 182, 182);
 }
 
 h2 {
@@ -72,12 +112,21 @@ p {
     text-align: justify;
 }
 
-footer p a {
+footer a {
     text-decoration: none;
     border: 1px solid black;
     border-radius: 12px;
     padding: 4px 4px;
     color: black;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+}
+
+.card a:hover {
+    color: gold;
 }
 
 footer p a:hover {
@@ -118,23 +167,27 @@ section img {
 
 #contact1 button:hover {
     background-color: #e79f31;
+}
+
+h2, h3 {
+    text-shadow: 2px 2px 4px goldenrod;
+}
+
+h1 {
+    text-shadow: -1px 0 goldenrod, 0 2px goldenrod, 2px 0 goldenrod, 0 -1px goldenrod;
 
 }
 
-@media screen{
-
-    #categorydiv,
-    #contactdiv {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+@media screen and (max-width: 600px){
+    .column{
+        margin: 10 auto;
+        width: 100%;
+        display: flexbox;
+        margin-bottom: 10px;
     }
 
-    #category,
-    #contact1 {
-        flex: 1;
-        padding: 10px;
-        box-sizing: border-box;
-        max-width: 400px;
+    #categorydiv {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
