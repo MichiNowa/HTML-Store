@@ -204,4 +204,9 @@ h1 {
         box-sizing: border-box;
         min-width: 300px;
     }
+
+    nav ul li {
+        display: block;
+        padding: 5px;
+    }
 }
