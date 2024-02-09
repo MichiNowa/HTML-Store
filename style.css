@@ -58,7 +58,8 @@ nav ul li {
     -ms-flex: 1;
     flex: 1;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 10px;
+    width: 30%;
 }
 
 #category1 {
@@ -160,6 +161,11 @@ section img {
     border-radius: 15px;
 }
 
+#products img, #about img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
 #contact1 button {
     padding: 5px 15px;
     border-radius: 12px;
@@ -189,5 +195,13 @@ h1 {
     #categorydiv {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #category1, #category2 {
+        flex: 1;
+        padding: 10px;
+        box-sizing: border-box;
+        min-width: 300px;
     }
 }
